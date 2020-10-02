@@ -1,0 +1,11 @@
+[program:unattended-upgrades]
+user=root
+autostart=true
+autorestart=false
+command=/etc/init.d/unattended-upgrades start
+redirect_stderr=true
+stdout_logfile=/var/log/supervisor/%(program_name)s.log
+stdout_logfile_maxbytes=10MB
+stdout_logfile_backups=10
+startretries = 1
+startsecs = 0

@@ -1,0 +1,49 @@
+version: '3.5'
+services:
+  dgui:
+    image: rwd1/dgui
+    build: .
+    container_name: dgui
+#    restart: always
+    restart: "no"
+    volumes:
+      - ../home:/home
+#      - /dev/shm:/dev/shm
+    shm_size: 1gb
+    ports:
+      - "33890:3389"
+#    privileged: true
+#    entrypoint: ["/stuff/init.sh"]
+
+  dgui-l:
+    image: rwd1/dgui-l
+    build: ./l
+#    depends_on:
+#      - dgui
+    container_name: dgui-l
+#    restart: always
+    restart: "no"
+    volumes:
+      - ../home:/home
+#      - /dev/shm:/dev/shm
+    shm_size: 1gb
+    ports:
+      - "33891:3389"
+      - "8022:22"
+#    privileged: true
+
+  dgui-xl:
+    image: rwd1/dgui-xl
+    build: ./xl
+#    depends_on:
+#      - dgui-l
+    container_name: dgui-xl
+    restart: always
+    restart: "no"
+    volumes:
+      - ../home:/home
+#      - /dev/shm:/dev/shm
+    shm_size: 1gb
+    ports:
+      - "33892:3389"
+
