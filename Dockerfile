@@ -60,6 +60,7 @@ RUN apt-get update && apt-get upgrade -y \
 	clusterssh \
 	doublecmd-qt \
 	espeak \
+	catfish \
 	glogg \
 	idle3 \
 	chromium \
