@@ -32,6 +32,7 @@ RUN apt-get update && apt-get upgrade -y \
 	supervisor \
 	python3-pip \
 	curl \
+	par2 unrar-free libffi-dev libssl-dev \
 	whois \
 	ecryptfs-utils \
 	&& apt-get clean && rm -rf /var/lib/apt/lists/*
