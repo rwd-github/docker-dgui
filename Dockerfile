@@ -16,6 +16,8 @@ ENV LANG de_DE.UTF-8
 
 ENV DEBIAN_FRONTEND noninteractive
 
+RUN echo "deb http://deb.debian.org/debian testing non-free" > /etc/apt/sources.list.d/non-free.list
+
 RUN apt-get update && apt-get upgrade -y \
 	&& apt-get install -y -q \
 	tmux \
@@ -33,7 +35,7 @@ RUN apt-get update && apt-get upgrade -y \
 	supervisor \
 	python3-pip \
 	curl \
-	par2 unrar-free libffi-dev libssl-dev \
+	par2 unrar libffi-dev libssl-dev \
 	whois \
 	ecryptfs-utils \
 	&& apt-get clean && rm -rf /var/lib/apt/lists/*
