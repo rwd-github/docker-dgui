@@ -69,6 +69,8 @@ RUN apt-get update && apt-get upgrade -y \
 	glogg \
 	idle3 \
 	chromium \
+	geany \
+	geany-plugins \
 	&& apt-get clean && rm -rf /var/lib/apt/lists/* \
 	&& usermod -a -G ssl-cert xrdp
 

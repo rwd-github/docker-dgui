@@ -8,8 +8,6 @@ RUN apt-get update && apt-get upgrade -y -q \
 	keepassxc \
 	evince \
 	vlc \
-	geany \
-	geany-plugins \
 	actiona \
 	&& apt-get clean && rm -rf /var/lib/apt/lists/*
 
