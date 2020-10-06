@@ -16,7 +16,6 @@ RUN apt-get update && apt-get upgrade -y -q \
 	apt-transport-https \
 	unattended-upgrades \
 	seahorse \
-	thunderbird \
 	&& apt-get clean && rm -rf /var/lib/apt/lists/*
 #	rapidsvn \
 

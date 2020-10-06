@@ -35,6 +35,7 @@ RUN apt-get update && apt-get upgrade -y \
 	supervisor \
 	python3-pip \
 	curl \
+	thunderbird \
 	par2 unrar libffi-dev libssl-dev \
 	whois \
 	ecryptfs-utils \
