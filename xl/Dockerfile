@@ -15,6 +15,7 @@ RUN apt-get update && apt-get upgrade -y -q \
 	gnome-mines \
 	apt-transport-https \
 	unattended-upgrades \
+	k3b \
 	seahorse \
 	&& apt-get clean && rm -rf /var/lib/apt/lists/*
 #	rapidsvn \
