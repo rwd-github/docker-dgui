@@ -56,6 +56,7 @@ RUN apt-get update && apt-get upgrade -y \
 	xfce4 \
 	xfce4-goodies \
 	xfce4-terminal \
+	dbus-x11 \
 	firefox-esr \
 	firefox-esr-l10n-de \
 	remmina \
