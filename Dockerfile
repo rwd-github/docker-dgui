@@ -34,7 +34,7 @@ RUN apt-get update && apt-get upgrade -y \
 	htop \
 	supervisor \
 	python3-pip \
-	curl \
+	curl html2text \
 	thunderbird \
 	par2 unrar libffi-dev libssl-dev \
 	whois \
