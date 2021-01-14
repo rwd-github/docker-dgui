@@ -64,7 +64,7 @@ RUN apt-get update && apt-get upgrade -y \
 	fonts-hack-ttf \
 	xterm \
 	clusterssh \
-	doublecmd-qt \
+	doublecmd-gtk \
 	espeak \
 	catfish \
 	glogg \
