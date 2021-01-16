@@ -1,3 +1,6 @@
+DEPRECATED moved to: https://gitlab.com/ytdocker/gui
+
+
 # docker-dgui
 
 ## usages
